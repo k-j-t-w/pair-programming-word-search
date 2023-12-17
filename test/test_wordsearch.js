@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-const wordSearch = require('../wordsearch.js')
+const wordSearch = require('../wordsearch.js');
 
 describe("#wordSearch()", function() {
   it("should return false if the word is not present", function() {
@@ -15,13 +15,13 @@ describe("#wordSearch()", function() {
       ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
-    ], 'FRANK')
+    ], 'FRANK');
 
     assert.isFalse(result);
   });
 
   it("should return false if the array is empty", function() {
-    const result = wordSearch([], 'FRANK')
+    const result = wordSearch([], 'FRANK');
 
     assert.isFalse(result);
   });
@@ -37,7 +37,7 @@ describe("#wordSearch()", function() {
       ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
-    ], 'SEINFELD')
+    ], 'SEINFELD');
 
     assert.isTrue(result);
   });
@@ -48,7 +48,7 @@ describe("#wordSearch()", function() {
       ["y", "e", "t", "a"],
       ["w", "e", "b", "s"],
       ["h", "d", "o", "n"]
-        ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
@@ -59,7 +59,7 @@ describe("#wordSearch()", function() {
       [ 'p', 'a', 'e', 'd' ],
       [ 'h', 't', 'b', 'o' ],
       [ 'z', 'e', 's', 'n' ]
-       ], "yate")
+    ], "yate");
 
     assert.isTrue(result);
   });
@@ -70,7 +70,7 @@ describe("#wordSearch()", function() {
       [ 'p', 'e', 'e', 'd' ],
       [ 'h', 't', 'b', 'o' ],
       [ 'z', 'a', 's', 'n' ]
-       ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
@@ -81,7 +81,7 @@ describe("#wordSearch()", function() {
       ["y", "q", "t", "q"],
       ["q", "q", "b", "e"],
       ["h", "d", "o", "n"]
-        ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
@@ -92,7 +92,7 @@ describe("#wordSearch()", function() {
       ["y", "t", "t", "c"],
       ["e", "e", "b", "s"],
       ["h", "d", "o", "n"]
-      ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
@@ -103,7 +103,7 @@ describe("#wordSearch()", function() {
       [ 'p', 'q', 'e', 'd' ],
       [ 'h', 't', 'b', 'o' ],
       [ 'a', 'e', 's', 'n' ]
-       ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
@@ -114,7 +114,7 @@ describe("#wordSearch()", function() {
       [ 'e', 'q', 'q', 'd' ],
       [ 'h', 't', 'b', 'o' ],
       [ 'z', 'q', 'a', 'n' ]
-      ], "ate")
+    ], "ate");
 
     assert.isTrue(result);
   });
